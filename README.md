@@ -1,4 +1,4 @@
-# 🩺 Diabetes Prediction System
+# Diabetes Prediction System
 Project Overview
 
 The Diabetes Prediction System is a machine-learning-based web application built with Flask that predicts whether a person is Healthy, Pre-Diabetic, or Diabetic based on their lifestyle and medical data.

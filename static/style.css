@@ -1,0 +1,105 @@
+/* Body & general layout */
+body {
+    background: #f6f8fa;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for forms and results */
+.container, .result-container {
+    width: 400px;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    color: #0077b6;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Form groups / spacing */
+.form-group {
+    margin-bottom: 20px;  /* Space between inputs */
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* Inputs & selects */
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #0077b6;
+    box-shadow: 0 0 6px rgba(0, 119, 182, 0.4);
+}
+
+/* Buttons */
+button, .back-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0077b6;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover, .back-button:hover {
+    background: #005f8d;
+}
+
+/* Result text */
+.result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077b6;
+    margin-top: 10px;
+}
+
+/* Inputs table for result page */
+.inputs-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.inputs-table td,
+.inputs-table th {
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+}
+
+.inputs-table th {
+    background-color: #0077b6;
+    color: white;
+}

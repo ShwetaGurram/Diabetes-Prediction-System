@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction System</h1>
+        <form action="/predict" method="post">
+
+            <!-- Age -->
+            <label>Age:</label>
+            <input type="number" name="age" min="0" max="120" step="1" required>
+
+            <!-- BMI -->
+            <label>BMI (Body Mass Index):</label>
+            <input type="number" name="bmi" step="0.1" min="0" required>
+
+            <!-- Hypertension -->
+            <label>Hypertension:</label>
+            <select name="hypertension" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <!-- Heart Disease -->
+            <label>Heart Disease:</label>
+            <select name="heart_disease" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <!-- Gender -->
+            <label>Gender:</label>
+            <select name="gender" required>
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+
+            <!-- Smoking History -->
+            <label>Smoking History:</label>
+            <select name="smoking_history" required>
+                <option value="0">Never</option>
+                <option value="1">Former</option>
+                <option value="2">Current</option>
+            </select>
+
+            <!-- HbA1c Level -->
+            <label>Hemoglobin A1c Level:</label>
+            <input type="number" name="HbA1c_level" step="0.1" min="0" required>
+
+            <!-- Blood Glucose Level -->
+            <label>Blood Glucose Level:</label>
+            <input type="number" name="blood_glucose_level" step="0.1" min="0" required>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
